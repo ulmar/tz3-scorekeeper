@@ -1,0 +1,141 @@
+:root {
+    --purple: #6a1b9a;
+    --light-purple: #9c4dcc;
+    --dark-purple: #4a148c;
+}
+
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.btn-purple,
+.btn-purple:active, 
+.btn-purple:focus, 
+.btn-purple.active {
+    background-color: var(--purple);
+    color: white;
+}
+
+.btn-primary,
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary.active {
+  background-color: var(--purple) !important; /* Colore di default di btn-primary */
+  border-color: var(--dark-purple) !important;
+}
+
+.btn-outline-danger,
+.btn-outline-danger:active, 
+.btn-outline-danger:focus, 
+.btn-outline-danger.active {
+  background-color: var(--purple) !important; /* Colore di default di btn-primary */
+  border-color: var(--dark-purple) !important;
+  color: white !important;
+}
+
+.btn-outline-purple {
+    border-color: var(--purple);
+    color: var(--purple);
+}
+
+.btn-outline-purple:hover {
+    background-color: var(--purple);
+    color: white;
+}
+
+.bg-purple {
+    background-color: var(--purple) !important;
+}
+
+.player-card {
+    border: 3px solid var(--light-purple);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+    font-weight: bold;
+    color: var(--dark-purple);
+}
+
+#overtimeMessage {
+    color: var(--dark-purple);
+    min-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .score {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Inverte l'ordine delle colonne su mobile */
+    .row.g-4.mb-4 {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+
+/* Aggiungi queste regole */
+.score-btn {
+    min-width: 80px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.score {
+    min-width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .score-btn {
+        min-width: 60px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .score {
+        min-width: 80px;
+        font-size: 3.5rem !important;
+    }
+
+    .rotate{
+        transform: rotate(180deg);
+    }
+}
+
+.player-name{
+    font-size: 2.5rem !important;
+}
+
+.title{
+    font-size: 2.5rem !important;
+}
+
+.circle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    font-size: 1.5rem !important;
+}
+
+.lore-button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  width: 100px;
+  height: 120px;
+  margin-bottom: -20px;
+}
+
+.lore-button img {
+  width: 60%;
+  height: 60%;
+}
