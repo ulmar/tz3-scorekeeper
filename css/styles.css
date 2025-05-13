@@ -50,7 +50,14 @@
 .player-card {
     border: 3px solid var(--light-purple);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
+
+#overtimeSection{
+    font-size: 20px;
+}
+
+
 
 .score {
     font-weight: bold;
@@ -132,7 +139,7 @@
   cursor: pointer;
   width: 100px;
   height: 120px;
-  margin-bottom: -20px;
+  margin-bottom: -40px;
 }
 
 .lore-button img {

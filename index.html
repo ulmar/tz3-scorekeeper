@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorcana Scorekeeper</title>
@@ -10,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="icons/icon-192x192.png">
+    
 </head>
 <body class="bg-light">
     <div class="container py-4">
@@ -48,7 +50,7 @@
                              <button class="lore-button" onclick="updateScore(2, -1)">
                                 <img src="icons/Ruby-Ink.png" alt="Lore di Lorcana">
                             </button>
-                            <div class="score display-2 mx-4" id="score1">0</div>
+                            <div class="score display-2 mx-4" id="score2">0</div>
                             <!-- <button class="btn btn-success btn-lg score-btn circle-btn" onclick="updateScore(2, 1)">+1</button>-->
                             <button class="lore-button" onclick="updateScore(2, 1)">
                                 <img src="icons/Amethyst-Ink.png" alt="Lore di Lorcana">
@@ -60,12 +62,12 @@
         </div>
 
         <!-- Sezione Overtime -->
-        <div class="card mb-4">
+        <div class="card mb-4 h-100">
             <div class="card-body player-card text-center">
                 <!-- <button class="btn btn-purple mb-3" type="button" id="toggleOvertimeBtn" onclick="toggleOvertime()">Overtime</button> -->
                 <button class="btn btn-primary btn-purple mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#overtimeSection" aria-expanded="false" aria-controls="overtimeSection">Overtime</button>
-                <div id="overtimeSection" class="collapse">
-                    <h3 class="mb-3">Turni Overtime: <span id="overtimeCounter">0</span>/5</h3>
+                <div id="overtimeSection" class="collapse overtime">
+                    <span class="mb-3">Turni Overtime: <span id="overtimeCounter">0</span>/5</span>
                     <div class="progress mb-3" style="height: 30px;">
                         <div id="overtimeProgress" class="progress-bar bg-purple" role="progressbar" style="width: 0%"></div>
                     </div>
